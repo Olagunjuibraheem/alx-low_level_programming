@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char data[] =  "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char data[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
 	size_t elements_written = fwrite(data, sizeof(char), sizeof(data) - 1, stderr);
 
