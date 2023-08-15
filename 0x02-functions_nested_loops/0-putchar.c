@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * main - Entry point.
  * Description: print putchar
  * * Return: On success (0)
  */
