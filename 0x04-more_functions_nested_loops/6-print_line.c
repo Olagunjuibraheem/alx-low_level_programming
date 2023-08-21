@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_line - print_ne line in the terminalal
- * @n: number  of times to print
+ * print_line - ffunction that draws a straight line in the terminal
+ * @n: number of times to print
  * Return: Always (0)
  */
 
