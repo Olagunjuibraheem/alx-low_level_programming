@@ -7,14 +7,13 @@
  */
 void puts2(char *str)
 {
-	if (*str == '\0')
-	{
-		_putchar('\n');
-	}
 	while (*str != '\0')
 	{
 		_putchar(*str);
 		str += 2;
+	}
+	if (*str == '\0')
+	{
 		_putchar('\n');
 	}
 }
