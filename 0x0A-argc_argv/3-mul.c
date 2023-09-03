@@ -4,7 +4,7 @@
  * main - program that prints all arguments it receives.
  * @argc: Number of
  * @argv: Arrays of
- * Return: Always (0)
+ * Return: (1) If the program arguments is not two, otherwise return (result).
  */
 int main(int argc, char *argv[])
 {
@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
+		return (1);
 	}
 	i = 1;
 	if (argc == 3)
