@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - program that prints all arguments it receives.
- * @argc: Number of
- * @argv: Arrays of
- * Return: (1) If the program arguments is not two, otherwise return (result).
+ * main - program that adds positive numbers.
+ * @argc: Number of string
+ * @argv: Array of string arrays
+ * Return: (1) If program arguments contain letter, otherwise return (0).
  */
 int main(int argc, char *argv[])
 {
