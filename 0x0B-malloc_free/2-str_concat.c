@@ -12,13 +12,11 @@ char *str_concat(char *s1, char *s2)
 	char *s3;
 	int len1, len2, len, i, j;
 
-	if (s1 == NULL)
-		return ('\0');
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 	len1 = 0;
 	while (s1[len1] != '\0')
 		len1++;
-	if (s2 == NULL)
-		return ('\0');
 	len2 = 0;
 	while (s2[len2] != '\0')
 		len2++;
