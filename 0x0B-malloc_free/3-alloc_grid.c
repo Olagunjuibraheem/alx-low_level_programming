@@ -33,6 +33,5 @@ int **alloc_grid(int width, int height)
 			ptr_ijarr[r][c] = 0, c++;
 		r++;
 	}
-	free(ptr_ijarr);
 	return (ptr_ijarr);
 }
