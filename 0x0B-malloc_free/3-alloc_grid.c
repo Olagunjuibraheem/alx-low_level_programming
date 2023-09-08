@@ -26,9 +26,9 @@ int **alloc_grid(int width, int height)
 			c = r;
 			while (c > 0)
 				free(ptr_ijarr[c]), c--;
-			free(ptr_ijarr[r]);
 			return (NULL);
 		}
+		free(ptr_ijarr[r]);
 		c = 0;
 		while (c < width)
 			ptr_ijarr[r][c] = 0, c++;
