@@ -20,16 +20,18 @@ int **alloc_grid(int width, int height)
 	r = 0;
 	while (r < height)
 	{
-		ptr_ijarr = malloc(sizeof(int *) * width);
-		if (ptr_ijarr == NULL)
+		ptr_ijarr[r] = malloc(sizeof(int *) * width);
+		if (ptr_ijarr[r] == NULL)
+		{
+			c = r;
+			while(c > 0)
+				free(ptr_ijarr[c]), c--;
 			return (NULL);
+		}
 		c = 0;
 		while (c < width)
-		{
-			ptr_ijarr[r][c] = 0;
-			c++;
-			}
+			ptr_ijarr[r][c] = 0, c++;
 		r++;
-		}
+	}
 	return (ptr_ijarr);
 }
