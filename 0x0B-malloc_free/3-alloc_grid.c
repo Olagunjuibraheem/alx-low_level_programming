@@ -23,7 +23,6 @@ int **alloc_grid(int width, int height)
 		ptr_ijarr[r] = malloc(sizeof(int) * width);
 		if (ptr_ijarr[r] == NULL)
 		{
-			r = 0;
 			while (r >= 0)
 			{
 				r--;
