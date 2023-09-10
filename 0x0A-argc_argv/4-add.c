@@ -17,20 +17,16 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		sum = 0;
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) >= 0)
-			{
-				sum += atoi(argv[i]);
-			}
-			else
+			if (*argv[i] < 48 || *argv[i] > 57)
 			{
 				printf("Error\n");
 				return (1);
 			}
+			sum += atoi(argv[i]);
 		}
-		printf("%d\n", sum);
 	}
+	printf("%d\n", sum);
 	return (0);
 }
