@@ -17,10 +17,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	n_coin = 0;
 	if (argc == 2)
 	{
 		num  = atoi(argv[1]);
-		n_coin = 0;
 		if (num >= 0)
 		{
 			j = 0;
@@ -34,7 +34,10 @@ int main(int argc, char *argv[])
 			}
 		}
 		else
-			printf("Error\n");
+		{
+			printf("0\n");
+			return (0);
+		}	
 	}
 	printf("%d\n", n_coin);
 	return (0);
