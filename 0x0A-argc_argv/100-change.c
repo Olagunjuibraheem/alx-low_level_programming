@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 		{
 			printf("0\n");
 			return (0);
-		}	
+		}
 	}
 	printf("%d\n", n_coin);
 	return (0);
