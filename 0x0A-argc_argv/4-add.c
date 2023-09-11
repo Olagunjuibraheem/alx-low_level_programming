@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, get_int, sum;
 
 	i = 1;
 	while (i < argc)
@@ -20,7 +20,8 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			sum += atoi(argv[i]);
+			get_int = atoi(argv[i]);
+			sum += get_int;
 		}
 		i++;
 	}
