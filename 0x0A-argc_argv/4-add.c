@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - program that adds positive numbers.
  * @argc: Number of string
@@ -8,23 +9,28 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, get_int, sum;
+	int i, c, get_int, sum;
+	char *tmp;
 
+	sum = 0;
 	if (argc > 1)
 	{
 		i = 1;
 		while (i < argc)
 		{
-			if (*argv[i] < 48 || *argv[i] > 57)
+			tmp = argv[i];
+			c = 0;
+			while (tmp[c] != '\0')
 			{
-				printf("Error\n");
-				return (1);
+				if (tmp[c] < 48 || tmp[c] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+				c++;
 			}
-			else
-			{
-				get_int = atoi(argv[i]);
-				sum += get_int;
-			}
+			get_int = atoi(tmp);
+			sum += get_int;
 			i++;
 		}
 	}
