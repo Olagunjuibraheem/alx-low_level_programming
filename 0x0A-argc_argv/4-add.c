@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 				}
 				c++;
 			}
-			get_int = atoi(argv[i]);
+			get_int = atoi(tmp);
 			sum += get_int;
 			i++;
 		}
