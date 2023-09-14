@@ -38,9 +38,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s3[i] = s1[i], i++;
 	i = l1;
 	j = 0;
-	while (n < l2 && s[l1] != s[l1 + n])
+	while (n < l2 && s2[j] != s2[l1 + n])
 		s3[i] = s2[j], i++, j++;
-	while (n >= l2 && s[i] != s[l])
+	while (n >= l2 && s2[j] != s2[l])
 		s3[i] = s2[j], i++, j++;
 	s3[i] = '\0';
 	return (s3);
