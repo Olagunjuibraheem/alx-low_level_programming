@@ -9,11 +9,9 @@
 void print_binary(unsigned long int n)
 {
 	int i, cnt_num;
+	unsigned long int current_num;
 
-	i = 0;
-	cnt_num = 0;
-	unsigned int current_num;
-
+        cnt_num = 0;
 	i = 63;
 	while (i >= 0)
 	{
