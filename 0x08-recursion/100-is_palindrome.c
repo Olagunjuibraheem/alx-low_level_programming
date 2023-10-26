@@ -21,6 +21,7 @@ int is_palindrome(char *s)
 
 /**
  * palindrome_helper - a function that help to check palindrome
+ * @s: string to check for palindrom
  * @first: string to check characters from the fist character
  * @last: string to check characters from the last character
  *
@@ -39,7 +40,7 @@ int palindrome_helper(char *s, char *first, char *last)
 
 /**
  * string_length - a function that returns the length of a string
- * @str: string length to be returned
+ * @s: string length to be returned
  *
  * Return: leng of the string
  */
