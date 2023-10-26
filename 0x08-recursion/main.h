@@ -23,6 +23,10 @@ int prime_number_helper(int n, int m);
 
 int is_palindrome(char *s);
 
+int palindrome_helper(char *s, char *first, char *last);
+
+int string_length(char *s);
+
 int wildcmp(char *s1, char *s2);
 
 #endif /* MAUN_H */
