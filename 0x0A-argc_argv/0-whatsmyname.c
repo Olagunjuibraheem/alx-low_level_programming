@@ -6,7 +6,7 @@
  * @argc: number or size of commmand line arguments
  * @argv: point€r to array of command line arguments
  *
- * Return: Always 0
+ * Return: Always (0)
  */
 int main(int argc, char **argv)
 {
