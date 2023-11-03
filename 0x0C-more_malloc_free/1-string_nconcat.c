@@ -30,13 +30,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (concat_nstr == NULL)
 		return (NULL);
 	i = 0;
-	while (s1[i] != '\0')
-		concat_nstr[i] = s1[i], i++, j++;
+	while (s1[i] != s1[len1])
+		concat_nstr[i] = s1[i], i++;
 	i = len1;
 	j = 0;
 	while (n < len2 && i < len)
 		concat_nstr[i] = s2[j], i++, j++;
-	while (n >= len2 && i <len)
+	while (n >= len2 && i < len)
 		concat_nstr[i] = s2[j], i++, j++;
 	concat_nstr[i] = '\0';
 	return (concat_nstr);
