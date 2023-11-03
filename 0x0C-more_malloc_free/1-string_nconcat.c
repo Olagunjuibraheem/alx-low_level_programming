@@ -13,9 +13,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int len1, len2, len, i, j;
 
 	if (s1 == NULL)
-		s1 = "";	
+		s1 = "";
 	if (s1 == NULL)
 		s2 = "";
+	return (NULL);
 	len1 = 0;
 	while (s1[len1] != '\0')
 		len1++;
