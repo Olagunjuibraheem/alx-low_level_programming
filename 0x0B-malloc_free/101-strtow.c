@@ -23,9 +23,10 @@ char **strtow(char *str)
 	{	free(split_str);
 		return (NULL);
 	}
-	j = l = i = 0;
+	j = l = 0;
 	while (l < len)
 	{
+		i = 0;
 		while (str[l] != ' ' && str[l] != '\0')
 			n_str[i] = str[l], i++, l++;
 		n_str[i] = '\0';
