@@ -41,9 +41,8 @@ char **strtow(char *str)
 			free(split_str);
 			return (NULL);
 		}
-		i = 0;
-		while (n_str[i] != '\0')
-			split_str[j][i] = n_str[i], i++;
+		for (i = 0; n_str[i] != '\0'; i++)
+			split_str[j][i] = n_str[i];
 		split_str[j][i] = '\0',	j++, l++;
 	}
 	split_str[j] = NULL;
