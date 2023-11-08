@@ -9,8 +9,15 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
+	int i;
+
 	if (name == NULL)
 		return;
 
-	f(name);
+	i = 0;
+	while
+	{
+		f(namei[i]);
+		i++;
+	}
 }
