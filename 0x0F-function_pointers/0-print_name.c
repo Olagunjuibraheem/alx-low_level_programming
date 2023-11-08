@@ -15,7 +15,7 @@ void print_name(char *name, void (*f)(char *))
 		return;
 
 	i = 0;
-	while
+	while (name[i] != '\0')
 	{
 		f(namei[i]);
 		i++;
