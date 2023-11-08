@@ -6,7 +6,7 @@
  * @array: pointer to array elements
  * @size: size of array
  * @action: function pointer
- *
+ * D#scription: array iterator
  * Return: nothing
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
@@ -16,7 +16,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	i = 0;
 	while (i < size)
 	{
-	action(array[i]);
-	i++;
+		action(array[i]);
+		i++;
 	}
 }
