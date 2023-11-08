@@ -3,7 +3,7 @@
 /**
  * array_iterator - a function that executes a function given as a parameter
  * on each element of an array.
- * D#scription: array iterator
+ * Discription: array iterator
  * @array: pointer to array elements
  * @size: size of array
  * @action: function pointer
@@ -13,8 +13,8 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
-	
-	if (action == NULL)
+
+	if (action == NULL && size == NULL)
 		return;
 	i = 0;
 	while (i < size)
