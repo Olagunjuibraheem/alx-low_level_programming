@@ -1,8 +1,8 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include <stddef.h>
 #include <stdlib.h>
-
+#include <string.h>
+#include <unistd.h>
 /**
  * main - Entry point
  * @argc: number/ size of command line arguments
@@ -25,10 +25,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*ops == '/' && argv[2] == 0) || (*ops == '%' && argv[2] == 0))
+	while (atoi(argv[3]) == 0)
 	{
-		printf("Error\n");
-		exit(100);
+		if (strcmp(ops, "/") == 0 || strcmp(ops, "%") == 0)
+		{
+			printf("Error\n");
+			exit(100);
+		}
 	}
 	printf("%d\n", get_op_func(ops)(atoi(argv[1]), atoi(argv[3])));
 
