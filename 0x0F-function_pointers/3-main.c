@@ -25,8 +25,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((atoi(argv[3]) == 0 && strcmp(ops, "/") == 0) ||
-	(atoi(argv[3]) == 0 && strcmp(ops, "%") == 0))
+	if ((strcmp(ops, "/") == 0 && atoi(argv[3]) == 0) ||
+	(strcmp(ops, "%") == 0 && atoi(argv[3]) == 0))
 	{
 		printf("Error\n");
 		exit(100);
