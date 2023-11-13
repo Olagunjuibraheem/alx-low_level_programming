@@ -25,13 +25,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	while (atoi(argv[3]) == 0)
+	if ((atoi(argv[3]) == 0 && strcmp(ops, "/") == 0) ||
+	(atoi(argv[3]) == 0 && strcmp(ops, "%") == 0))
 	{
-		if (strcmp(ops, "/") == 0 || strcmp(ops, "%") == 0)
-		{
-			printf("Error\n");
-			exit(100);
-		}
+		printf("Error\n");
+		exit(100);
 	}
 	printf("%d\n", get_op_func(ops)(atoi(argv[1]), atoi(argv[3])));
 
